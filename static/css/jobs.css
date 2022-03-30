@@ -1,0 +1,32 @@
+.container{
+  margin-top: 50px;
+  text-align: center;
+}
+.container .jumbotron{
+  background: red;
+  color: white;
+}
+.jumbotron a{
+  background: yellow;
+  color: red;
+  border: 2px solid green;
+}
+body{
+  background: url(https://media.istockphoto.com/photos/water-pouring-into-glass-picture-id1183424538?s=612x612)
+  background-repeat: norepeat;
+  background-size: cover;
+}
+html{
+  height: 100%;
+}
+h1{
+  color:white;
+  text-align: center;
+  background: red;
+}
+img{
+  height:200px;
+  width:30%;
+  margin:1.5%;
+  float:left;
+}
