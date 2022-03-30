@@ -2,7 +2,7 @@ from django.shortcuts import render
 from testapp.models import HydJobs,BangaloreJobs,PuneJobs
 
 # Create your views here.
-def homepage_view(request):
+def homepage_view1(request):
     return render(request,'testapp/index.html')
 
 def hydjobs_view(request):
