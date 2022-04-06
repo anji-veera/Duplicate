@@ -4,16 +4,17 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="{% static "css/jobs.css" %}">
   </head>
   <body>
     <h1>Hyderabad Jobs Information</h1>
-    <img src="{% static "images/hyd1.jpg"%}" alt="">
-    <img src="{% static "images/hyd2.jpg"%}" alt="">
-    <img src="{% static "images/hyd3.jpg"%}" alt="">
+    <img src="{% static "images/hyd1.jpg.jpg" %}" alt="not found">
+    <img src="{% static "images/hyd2.jpg.jpg" %}" alt="not found">
+    <img src="{% static "images/hyd3.jpg.jpg" %}" alt="not found">
     <hr>
     {% if jobs_list %}
-    <table>
-      <thead>
+    <table dorder=1>
+<thead>
         <th>Date</th>
           <th>Company</th>
             <th>Title</th>
@@ -21,8 +22,9 @@
                 <th>Address</th>
                   <th>Email</th>
                     <th>Phonenumber</th>
+
                     {% for job in jobs_list %}
-                    <tr>
+  <tr>
                       <td>{{job.date}}</td>
                         <td>{{job.company}}</td>
                           <td>{{job.title}}</td>
@@ -30,12 +32,13 @@
                               <td>{{job.address}}</td>
                                 <td>{{job.email}}</td>
                                   <td>{{job.phonenumber}}</td>
-                    </tr>
-                    {% endfor %}
-      </thead>
-    </table>
+  </tr>
+{% endfor %}
+  </thead>
+                                    </table>
     {% else %}
-    <p>No jobs found in hyderabad</p>
+    <p>No jobs found in hyderabad</p
+      {% endif %}
 
   </body>
 </html>

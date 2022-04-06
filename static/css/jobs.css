@@ -12,8 +12,9 @@
   border: 2px solid green;
 }
 body{
-  background: url(https://media.istockphoto.com/photos/water-pouring-into-glass-picture-id1183424538?s=612x612)
-  background-repeat: norepeat;
+  background: url(https://media.istockphoto.com/photos/
+                     water-pouring-into-glass-picture-id1183424538?s=612x612);
+  background-repeat: no-repeat;
   background-size: cover;
 }
 html{
@@ -29,4 +30,10 @@ img{
   width:30%;
   margin:1.5%;
   float:left;
+}
+table,thead,th,tr,td{
+  color: yellow;
+  border: 2px,solid,white;
+  font-size: 20px;
+
 }
